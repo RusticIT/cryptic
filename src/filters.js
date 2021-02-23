@@ -1,6 +1,6 @@
 import numeral from "numeral";
 
-const dollarFilter = (value) => {
+const dollarFilter = value => {
   if (!value) {
     return "$ 0";
   }
@@ -8,7 +8,7 @@ const dollarFilter = (value) => {
   return numeral(value).format("($ 0.00a)");
 };
 
-const percentFilter = (value) => {
+const percentFilter = value => {
   if (!value) {
     return "0%";
   }
@@ -16,11 +16,15 @@ const percentFilter = (value) => {
   return `${num}%`;
 };
 
-const rankFilter = (value) => {
-	if (!value) {
-		return "";
-	}
-	return `#${value}`;
+const rankFilter = value => {
+  if (!value) {
+    return "";
+  }
+  return `#${value}`;
+};
+
+const fixedFour = value => {
+  return value.toFixed(4);
 }
 
-export { dollarFilter, percentFilter, rankFilter };
+export { dollarFilter, percentFilter, rankFilter, fixedFour };

@@ -18,6 +18,7 @@ module.exports = {
       }
     }
   },
+  darkMode: "media",
   variants: {
     opacity: ["responsive", "hover"]
   },
