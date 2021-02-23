@@ -1,4 +1,4 @@
-# platzi_exchange
+# CRYPTIC
 
 ## Project setup
 ```
