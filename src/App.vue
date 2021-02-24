@@ -13,7 +13,7 @@ export default {
   components: { PxHeader },
   data() {
     return {
-      name: "Cryptic - The Rustic Cypto Platform",
+      name: "Rustic Crypto Platform",
       description:
         "A cryptocurrency platform to analyze data from different crypto datasources."
     };
@@ -29,7 +29,7 @@ export default {
       return [
         {
           name: "application-name",
-          content: "Cryptic - The Rustic`s Crypto Platform"
+          content: "Cryptic - The Rustic Crypto Platform"
         },
         {
           name: "description",
